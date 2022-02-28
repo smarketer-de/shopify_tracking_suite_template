@@ -1,0 +1,51 @@
+Tags:
+60 - Google Ads: Linker
+
+Triggers:
+30 - Purchase
+31 - STS Ready
+32 - Add Product To Cart
+
+50 - Google Ads: CMP Change - GAds Consented
+51 - Google Ads: STS Ready - CMP GAds Consented
+52 - Google Ads: Purchase Gads Consented
+
+53 - MS Ads: CMP Change
+54 - MS Ads: STS Ready
+55 - MS Ads: Purchase
+
+56 - GAnalytics: CMP Change
+57 - GAnalytics: STS Ready
+58 - GAnalytics: Purchase
+
+Variables:
+41 - [Customize] Also Track Purchase when it's not first time access (Test mode)
+
+21 - Purchase Value
+22 - Purchase ID
+23 - Purchase Currency
+29 - Purchase - Is first time accessed
+33 - [Customize] Purchase Value Tracking Type
+34 - Purchase - all Data
+42 - Purchase - Should track event
+
+25 - Remarketing - ecomm_prodid
+26 - Remarketing - ecomm_pagetype
+27 - Remarketing - ecomm_totalvalue
+
+28 - Google Ads: CMP - Has accepted Google Ads
+38 - Bing Ads: CMP - Has accepted
+39 - GAnalytics: CMP - Has accepted
+
+60: GA4 - Purchase Tax
+61: GA4 - Purchase Shipping
+62: GA4 - Purchase Items
+
+
+Templates:
+35 - Purchase Value Type
+36 - Consent Manager Selection
+37 - First Time Accessed Chooser
+
+
+150+ - Dynamic Allocated

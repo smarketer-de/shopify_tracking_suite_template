@@ -1,0 +1,1720 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-01-14 16:42:52",
+    "containerVersion": {
+        "path": "accounts/6001114002/containers/53700801/versions/0",
+        "accountId": "6001114002",
+        "containerId": "53700801",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6001114002/containers/53700801",
+            "accountId": "6001114002",
+            "containerId": "53700801",
+            "name": "Shopify Tracking Suite",
+            "publicId": "GTM-KN2VP73",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1639752311126",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6001114002/containers/53700801/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "17",
+                "name": "GAds - Conversion Linker - all Pages",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1635345991870",
+                "firingTriggerId": [
+                    "11",
+                    "15"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "18",
+                "name": "GAnalytics - E-Commerce + UA - all Pages",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useEcommerceDataLayer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{[Customize] Google Analytics - UA-ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1635346056154",
+                "firingTriggerId": [
+                    "12",
+                    "16"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "24",
+                "name": "GAds - Conversion Purchase - Thank you page",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "orderId",
+                        "value": "{{Purchase - ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionValue",
+                        "value": "{{Purchase - Value}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[Customize] Google Ads - Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "currencyCode",
+                        "value": "{{Purchase - Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{[Customize] Google Ads - Conversion Label Purchase}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1635346287876",
+                "firingTriggerId": [
+                    "19"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "28",
+                "name": "GAds - Remarketing - all Pages",
+                "type": "sp",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDynamicRemarketing",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "customParams",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_prodid"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Remarketing - ecomm_prodid}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_pagetype"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Remarketing - ecomm_pagetype}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_totalvalue"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Remarketing - ecomm_totalvalue}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[Customize] Google Ads - Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customParamsFormat",
+                        "value": "USER_SPECIFIED"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1635346466257",
+                "firingTriggerId": [
+                    "11",
+                    "15"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "37",
+                "name": "FAST - Script - all Pages",
+                "type": "cvt_53700801_36",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "domainAlias"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "serverId",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1635949218696",
+                "firingTriggerId": [
+                    "35"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "39",
+                "name": "FAST - Conversion Purchase - Thank you page",
+                "type": "cvt_53700801_38",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "wert",
+                        "value": "{{Purchase - Value}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "gclidBestellung"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "waehrung",
+                        "value": "{{Purchase - Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "nummer",
+                        "value": "{{Purchase - ID}}"
+                    }
+                ],
+                "fingerprint": "1635949264988",
+                "firingTriggerId": [
+                    "34"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "45",
+                "name": "MSAds - UET Tag - all Pages",
+                "type": "baut",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "c_navTimingApi",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{[Customize] MSAds - UET Tag ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "c_storeConvTrackCookies",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "uetqName",
+                        "value": "uetq"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "c_disableAutoPageView",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "c_removeQueryFromUrls",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventType",
+                        "value": "PAGE_LOAD"
+                    }
+                ],
+                "fingerprint": "1636726618532",
+                "firingTriggerId": [
+                    "47",
+                    "49"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "50",
+                "name": "MSAds - Conversion Purchase - Thank you page",
+                "type": "baut",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "goalValue",
+                        "value": "{{Purchase - Value}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "p_currency",
+                        "value": "{{Purchase - Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "uetqName",
+                        "value": "uetq"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventType",
+                        "value": "VARIABLE_REVENUE"
+                    }
+                ],
+                "fingerprint": "1636726700016",
+                "firingTriggerId": [
+                    "48"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "53",
+                "name": "GAds YouTube - Conversion Purchase - Thank you page",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "orderId",
+                        "value": "{{Purchase - ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionValue",
+                        "value": "{{Purchase - Value}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[Customize] Google Ads YouTube - Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "currencyCode",
+                        "value": "{{Purchase - Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{[Customize] Google Ads YouTube - Conversion Label Purchase}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1636726800130",
+                "firingTriggerId": [
+                    "19"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "tagId": "57",
+                "name": "GAds YouTube - Conversion Add To Cart - all Pages",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{[Customize] Google Ads YouTube - Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{[Customize] Google Ads - Conversion Label Add To Cart}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1636727130948",
+                "firingTriggerId": [
+                    "55"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "11",
+                "name": "STS Ready - CMP GAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:start"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1635346490613"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "12",
+                "name": "STS Ready - CMP GAnalytics Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:start"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Analytics}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1635346498598"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "15",
+                "name": "CMP Change - GAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:cmp-change"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1639748113364"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "16",
+                "name": "CMP Change - GAnalytics Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:cmp-change"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Analytics}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1639748118225"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "19",
+                "name": "Purchase - GAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:purchase"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Purchase - Should track event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636123864919"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "20",
+                "name": "Purchase - GAnalytics Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:purchase"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Analytics}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Purchase - Should track event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636123870497"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "34",
+                "name": "Purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:purchase"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Purchase - Should track event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636123858625"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "35",
+                "name": "STS Ready",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:start"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1635949175012"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "47",
+                "name": "STS Ready - CMP MSAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:start"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted MS Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636726483634"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "48",
+                "name": "Purchase - MSAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:purchase"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted MS Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Purchase - Should track event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636726577436"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "49",
+                "name": "CMP Change - MSAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:cmp-change"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted MS Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1639748123031"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "54",
+                "name": "Add Product to Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "addToCart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636727029901"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "55",
+                "name": "Add Product to Cart - GAds Consented",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "addToCart"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CMP - Has accepted Google Ads}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636727061418"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "4",
+                "name": "[Customize] Google Analytics - UA-ID",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "anonymizeIp"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "UA-0000000-0"
+                    }
+                ],
+                "fingerprint": "1635346564571"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "5",
+                "name": "[Customize] Google Ads - Conversion ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "0000000000000"
+                    }
+                ],
+                "fingerprint": "1635346556322",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "6",
+                "name": "[Customize] Google Ads - Conversion Label Purchase",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "0000000000000000000000000"
+                    }
+                ],
+                "fingerprint": "1635949013882",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "8",
+                "name": "CMP - Has accepted Google Analytics",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "cmp.status.analytics"
+                    }
+                ],
+                "fingerprint": "1639748644295",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "10",
+                "name": "CMP - Has accepted Google Ads",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "cmp.status.ads"
+                    }
+                ],
+                "fingerprint": "1639748627608",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "21",
+                "name": "Purchase - Value",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var purchase = {{Purchase - all Data}};\n\n  switch({{[Customize] Purchase Value Tracking Type}}) {\n  \n    case 'net':\n      return purchase.subvalue - purchase.productTax;\n    case 'netWithShipping':\n      return purchase.value - purchase.tax;\n    case 'gross':\n      return purchase.subvalue;\n    case 'grossWithShipping':\n      return purchase.value;\n   \n  }\n\n}"
+                    }
+                ],
+                "fingerprint": "1636729126301",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "22",
+                "name": "Purchase - ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase.order"
+                    }
+                ],
+                "fingerprint": "1635945279817",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "23",
+                "name": "Purchase - Currency",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase.currency"
+                    }
+                ],
+                "fingerprint": "1635945306237",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "25",
+                "name": "Remarketing - ecomm_prodid",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecomm_prodid"
+                    }
+                ],
+                "fingerprint": "1635346414682",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "26",
+                "name": "Remarketing - ecomm_pagetype",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecomm_pagetype"
+                    }
+                ],
+                "fingerprint": "1635346430051",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "27",
+                "name": "Remarketing - ecomm_totalvalue",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecomm_totalvalue"
+                    }
+                ],
+                "fingerprint": "1635346446103",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "29",
+                "name": "Purchase - Is first time accessed",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase.first_time_accessed"
+                    }
+                ],
+                "fingerprint": "1635945447080",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "31",
+                "name": "[Customize] Purchase Value Tracking Type",
+                "type": "cvt_53700801_30",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "net"
+                    }
+                ],
+                "fingerprint": "1636729140779",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "32",
+                "name": "Purchase - all Data",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase"
+                    }
+                ],
+                "fingerprint": "1635945864003",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "41",
+                "name": "[Customize] Also Track Purchase when it's not first time access (Test mode)",
+                "type": "cvt_53700801_40",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "value",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1636727394747",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "42",
+                "name": "Purchase - Should track event",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  if ({{[Customize] Also Track Purchase when it's not first time access (Test mode)}}) {\n    return true;\n  }\n  return {{Purchase - Is first time accessed}};\n}"
+                    }
+                ],
+                "fingerprint": "1636123846816",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "44",
+                "name": "[Customize] MSAds - UET Tag ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "0000000000"
+                    }
+                ],
+                "fingerprint": "1636726384060",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "46",
+                "name": "CMP - Has accepted MS Ads",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "cmp.status.ms"
+                    }
+                ],
+                "fingerprint": "1639748719323",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "51",
+                "name": "[Customize] Google Ads YouTube - Conversion ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "0000000000"
+                    }
+                ],
+                "fingerprint": "1636726762746",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "52",
+                "name": "[Customize] Google Ads YouTube - Conversion Label Purchase",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "0000000000000000000000000"
+                    }
+                ],
+                "fingerprint": "1636726794192",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "56",
+                "name": "[Customize] Google Ads - Conversion Label Add To Cart",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "0000000000000000000000000"
+                    }
+                ],
+                "fingerprint": "1636727081041",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1642178572393",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6001114002/containers/53700801/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "30",
+                "name": "Purchase Value Type",
+                "fingerprint": "1636729089637",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Purchase Value Type\",\n  \"description\": \"\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"value\",\n    \"displayName\": \"Type\",\n    \"radioItems\": [\n      {\n        \"value\": \"net\",\n        \"displayValue\": \"Without VAT, without Shipping\"\n      },\n      {\n        \"value\": \"netWithShipping\",\n        \"displayValue\": \"Without VAT, with Shipping\"\n      },\n      {\n        \"value\": \"gross\",\n        \"displayValue\": \"With VAT, without Shipping\"\n      },\n      {\n        \"value\": \"grossWithShipping\",\n        \"displayValue\": \"With VAT, with Shipping\"\n      }\n    ],\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nreturn data.value;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "33",
+                "name": "Consent Manager Selection",
+                "fingerprint": "1635949086242",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Consent Manager Selection\",\n  \"description\": \"\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"value\",\n    \"displayName\": \"\",\n    \"radioItems\": [\n      {\n        \"value\": \"BeeClever\",\n        \"displayValue\": \"BeeClever CMP\"\n      },\n      {\n        \"value\": \"Shopify\",\n        \"displayValue\": \"Shopify CMP API\"\n      },\n      {\n        \"value\": \"none\",\n        \"displayValue\": \"None\"\n      }\n    ],\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nreturn data.value;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "36",
+                "name": "FAST Script",
+                "fingerprint": "1639751759666",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"FAST Script\",\n  \"categories\": [\n    \"ANALYTICS\",\n    \"CONVERSIONS\"\n  ],\n  \"brand\": {\n    \"id\": \"github.com_smarketer-de\",\n    \"displayName\": \"smarketer-de\",\n    \"thumbnail\": \"data:image/png;base64,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\"\n  },\n  \"description\": \"Laden und Konfigurieren des Smarketer FAST Tracking Codes\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"domainAlias\",\n    \"displayName\": \"Domain\",\n    \"simpleValueType\": true,\n    \"help\": \"Domain, welche FAST für das Tracking nutzt. Dies ist meist nur nötig, um Cross-Domain Tracking einzubauen.\\nLeer lassen, um dynamisch die aktuelle Domain zu ermitteln.\",\n    \"canBeEmptyString\": true\n  },\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"serverId\",\n    \"checkboxText\": \"Server-IDᵇᵉᵗᵃ verwenden\",\n    \"simpleValueType\": true,\n    \"help\": \"Server-ID kann bei iOS Geräten für bessere Ergebnisse sorgen.\\nDieses Feature ist jedoch noch in der Testphase.\"\n  },\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"ifl\",\n    \"checkboxText\": \"IFL-Modulᵇᵉᵗᵃ aktivieren\",\n    \"simpleValueType\": true,\n    \"help\": \"Das IFL-Modul sorgt für geringere Performance-Auswirkungen, indem das Skript über ein iFrame geladen wird.\\nDieses Feature ist jedoch noch in der Testphase.\",\n    \"defaultValue\": true\n  },\n  {\n    \"type\": \"SIMPLE_TABLE\",\n    \"name\": \"config\",\n    \"displayName\": \"Weitere Konfiguration\",\n    \"simpleTableColumns\": [\n      {\n        \"defaultValue\": \"\",\n        \"displayName\": \"Name\",\n        \"name\": \"name\",\n        \"type\": \"TEXT\"\n      },\n      {\n        \"defaultValue\": \"\",\n        \"displayName\": \"Wert\",\n        \"name\": \"value\",\n        \"type\": \"TEXT\"\n      }\n    ],\n    \"help\": \"Hierdurch können weitere Konfigurations-Einstellungen für die \\\"fast_config\\\" festgelegt werden.\\nDiese Einstellungen können aus der FAST Dokumentation genommen werden, sonst diese Auswahl leer lassen.\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst inject = require('injectScript');\nconst setInWindow = require('setInWindow');\nconst copyFromWindow = require('copyFromWindow');\n\nconst config = copyFromWindow('fast_config') || {};\n\nconfig.includedFromGtm = true;\n\nfor(const key in data.config) {\n  const item = data.config[key];\n  config[item.name] = item.value;\n}\n\nif (data.domainAlias !== '') {\n  config.domainAlias = data.domainAlias;\n}\nif (data.serverId) {\n  config.experiments = { serverSide: true };\n}\nif(data.ifl) {\n  config.loader = \"iframe\";\n}\n\nsetInWindow(\"fast_config\", config, true);\n\ninject('https://fast.smarketer.de/api/js/fast.js', () => {\n  data.gtmOnSuccess();\n});\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"inject_script\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urls\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"https://fast.smarketer.de/*\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"fast_config\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated in 2021\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "smarketer-de",
+                    "repository": "fast-gtm-script",
+                    "version": "c0f4d86ca41a111eb9b273515cf646872e6ce8b7",
+                    "signature": "048a8d91f199816b64b12c12591279751a6c1548f8c695ef796898aab6ca344e"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "38",
+                "name": "FAST Conversion",
+                "fingerprint": "1635949240507",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"FAST Conversion\",\n  \"categories\": [\n    \"ANALYTICS\",\n    \"CONVERSIONS\"\n  ],\n  \"brand\": {\n    \"id\": \"github.com_smarketer-de\",\n    \"displayName\": \"smarketer-de\",\n    \"thumbnail\": \"data:image/png;base64,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\"\n  },\n  \"description\": \"Eintragen von Conversions in FAST\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"wert\",\n    \"displayName\": \"Bestellwert\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"waehrung\",\n    \"displayName\": \"Währung\",\n    \"simpleValueType\": true,\n    \"canBeEmptyString\": true,\n    \"defaultValue\": \"EUR\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"nummer\",\n    \"displayName\": \"Bestellnummer\",\n    \"simpleValueType\": true,\n    \"canBeEmptyString\": false\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"name\",\n    \"displayName\": \"Conversion-Name\",\n    \"simpleValueType\": true,\n    \"defaultValue\": \"gclidBestellung\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst createQueue = require('createQueue');\nconst conversionsPush = createQueue('fast_conversions');\n\nconst conversionData = {\n  value: data.wert,\n  currency: data.waehrung,\n  name: data.name,\n  bestellnummer: data.nummer,\n};\nconversionsPush(conversionData);\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"fast_conversions\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated in 2021\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "smarketer-de",
+                    "repository": "fast-gtm-conversion",
+                    "version": "3e9b720e24a2a0dbb9c82a10de0615adc59b99c0",
+                    "signature": "3542bc5e764a9b3798dbdbfbb1416b117a328bae50df05ccfd36590ced57e389"
+                }
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "40",
+                "name": "First Time Accessed Chooser",
+                "fingerprint": "1636123731962",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"First Time Accessed Chooser\",\n  \"description\": \"\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"value\",\n    \"checkboxText\": \"Also Track Purchase when it\\u0027s not first time access\",\n    \"simpleValueType\": true,\n    \"defaultValue\": false,\n    \"help\": \"Check this checkbox if purchases should be tracked each time the status page is opened.\\nThis is useful for testing the tracking implementation on existing purchases.\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nreturn data.value;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            }
+        ]
+    }
+}

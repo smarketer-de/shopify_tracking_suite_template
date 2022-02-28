@@ -1,0 +1,426 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-01-14 16:42:52",
+    "containerVersion": {
+        "path": "accounts/00000000000/containers/00000000000/versions/0",
+        "accountId": "00000000000",
+        "containerId": "00000000000",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/00000000000/containers/00000000000",
+            "accountId": "00000000000",
+            "containerId": "00000000000",
+            "name": "Smarketer Tracking Suite",
+            "publicId": "GTM-AAAAAA",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "00000000000",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/00000000000/containers/00000000000/workspaces?apiLink=container"
+        },
+        "tag": [
+        ],
+        "trigger": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "34",
+                "name": "Purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:purchase"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Purchase - Should track event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636123858625"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "35",
+                "name": "STS Ready",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sts:start"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1635949175012"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "triggerId": "54",
+                "name": "Add Product to Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "addToCart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1636727029901"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "21",
+                "name": "Purchase - Value",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var purchase = {{Purchase - all Data}};\n\n  switch({{[Customize] Purchase Value Tracking Type}}) {\n  \n    case 'net':\n      return purchase.subvalue - purchase.productTax;\n    case 'netWithShipping':\n      return purchase.value - purchase.tax;\n    case 'gross':\n      return purchase.subvalue;\n    case 'grossWithShipping':\n      return purchase.value;\n   \n  }\n\n}"
+                    }
+                ],
+                "fingerprint": "1636729126301",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "22",
+                "name": "Purchase - ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase.order"
+                    }
+                ],
+                "fingerprint": "1635945279817",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "23",
+                "name": "Purchase - Currency",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase.currency"
+                    }
+                ],
+                "fingerprint": "1635945306237",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "25",
+                "name": "Remarketing - ecomm_prodid",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecomm_prodid"
+                    }
+                ],
+                "fingerprint": "1635346414682",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "26",
+                "name": "Remarketing - ecomm_pagetype",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecomm_pagetype"
+                    }
+                ],
+                "fingerprint": "1635346430051",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "27",
+                "name": "Remarketing - ecomm_totalvalue",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecomm_totalvalue"
+                    }
+                ],
+                "fingerprint": "1635346446103",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "29",
+                "name": "Purchase - Is first time accessed",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase.first_time_accessed"
+                    }
+                ],
+                "fingerprint": "1635945447080",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "31",
+                "name": "[Customize] Purchase Value Tracking Type",
+                "type": "cvt_53700801_30",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "net"
+                    }
+                ],
+                "fingerprint": "1636729140779",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "32",
+                "name": "Purchase - all Data",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "purchase"
+                    }
+                ],
+                "fingerprint": "1635945864003",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "41",
+                "name": "[Customize] Also Track Purchase when it's not first time access (Test mode)",
+                "type": "cvt_53700801_40",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "value",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1636727394747",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "variableId": "42",
+                "name": "Purchase - Should track event",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  if ({{[Customize] Also Track Purchase when it's not first time access (Test mode)}}) {\n    return true;\n  }\n  return {{Purchase - Is first time accessed}};\n}"
+                    }
+                ],
+                "fingerprint": "1636123846816",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1642178572393",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6001114002/containers/53700801/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "30",
+                "name": "Purchase Value Type",
+                "fingerprint": "1636729089637",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Purchase Value Type\",\n  \"description\": \"\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"value\",\n    \"displayName\": \"Type\",\n    \"radioItems\": [\n      {\n        \"value\": \"net\",\n        \"displayValue\": \"Without VAT, without Shipping\"\n      },\n      {\n        \"value\": \"netWithShipping\",\n        \"displayValue\": \"Without VAT, with Shipping\"\n      },\n      {\n        \"value\": \"gross\",\n        \"displayValue\": \"With VAT, without Shipping\"\n      },\n      {\n        \"value\": \"grossWithShipping\",\n        \"displayValue\": \"With VAT, with Shipping\"\n      }\n    ],\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nreturn data.value;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "33",
+                "name": "Consent Manager Selection",
+                "fingerprint": "1635949086242",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Consent Manager Selection\",\n  \"description\": \"\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"value\",\n    \"displayName\": \"\",\n    \"radioItems\": [\n      {\n        \"value\": \"BeeClever\",\n        \"displayValue\": \"BeeClever CMP\"\n      },\n      {\n        \"value\": \"Shopify\",\n        \"displayValue\": \"Shopify CMP API\"\n      },\n      {\n        \"value\": \"none\",\n        \"displayValue\": \"None\"\n      }\n    ],\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nreturn data.value;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            },
+            {
+                "accountId": "6001114002",
+                "containerId": "53700801",
+                "templateId": "40",
+                "name": "First Time Accessed Chooser",
+                "fingerprint": "1636123731962",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"First Time Accessed Chooser\",\n  \"description\": \"\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"value\",\n    \"checkboxText\": \"Also Track Purchase when it\\u0027s not first time access\",\n    \"simpleValueType\": true,\n    \"defaultValue\": false,\n    \"help\": \"Check this checkbox if purchases should be tracked each time the status page is opened.\\nThis is useful for testing the tracking implementation on existing purchases.\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nreturn data.value;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            }
+        ]
+    }
+}
